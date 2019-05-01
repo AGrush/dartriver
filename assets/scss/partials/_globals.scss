@@ -1,25 +1,40 @@
 $font-size: 20px;
 $main-padding: 0px;
 $padding-right: 38px;
-$home-beige: #ededed;
+//Home page text
 $text-dark: #292929;
+$text-dark-blue: #0D5071;
+$text-grey: #E9DDCF;
+//Home page bgs
+$home-gallery: #ededed;
+$home-bizarre: #E9DDCF;
+$deep-sea-green: #0D5071;
+$mine-shaft: #292929;
 
-.lineup {
-  position: absolute;
-  width: 1440px;
-  height: 811px;
-  background-image: url("/assets/img/1.png");
-  background-size: contain;
-  opacity: 0.5;
-  z-index: 999;
+// .lineup {
+//   position: absolute;
+//   width: 1440px;
+//   height: 811px;
+//   top: 1622px;
+//   background-image: url("/assets/img/3.png");
+//   background-size: contain;
+//   opacity: 0.5;
+//   z-index: 999;
+// }
+
+
+//Clearfix
+.group:before,
+.group:after {
+  content: "";
+  display: table;
 }
 
-.Gordita-Bold {
-  font-family: Gordita-Bold;
+.group:after {
+  clear: both;
 }
-.Gordita-Medium {
-  font-family: Gordita-Medium;
-}
-.Gordita-Regular {
-  font-family: Gordita-Regular;
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
 }
