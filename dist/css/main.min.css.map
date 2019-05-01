@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,AAAC,CACD,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../../assets/scss/main.scss",
+        "../../assets/scss/partials/_header.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
