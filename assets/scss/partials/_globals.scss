@@ -1,0 +1,25 @@
+$font-size: 20px;
+$main-padding: 0px;
+$padding-right: 38px;
+$home-beige: #ededed;
+$text-dark: #292929;
+
+.lineup {
+  position: absolute;
+  width: 1440px;
+  height: 811px;
+  background-image: url("/assets/img/1.png");
+  background-size: contain;
+  opacity: 0.5;
+  z-index: 999;
+}
+
+.Gordita-Bold {
+  font-family: Gordita-Bold;
+}
+.Gordita-Medium {
+  font-family: Gordita-Medium;
+}
+.Gordita-Regular {
+  font-family: Gordita-Regular;
+}
