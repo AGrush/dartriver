@@ -1,7 +1,11 @@
-.header {
+.background-grey {
   background-color: $home-gallery;
+}
+
+.header {
   color: $text-dark;
   width: 100%;
+  height: 811px;
 
   &__container {
     border: 0px solid black;
@@ -94,5 +98,11 @@
     width: 222px;
     height: 64px;
     background: url(../img/logo.svg) no-repeat;
+  }
+
+  &__logo-higher {
+    transform: translateY(-31px);
+    width: 191px;
+    padding-bottom: 0px;
   }
 }

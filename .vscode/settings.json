@@ -22,6 +22,6 @@
   "editor.formatOnSave": true,
   // Enable per-language
   "[html]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   }
 }
