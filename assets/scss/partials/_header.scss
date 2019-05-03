@@ -58,6 +58,8 @@
   }
 
   &__burger-text {
+    text-decoration: none;
+    color: $mine-shaft;
     font-family: Gordita-Medium;
     font-size: 13px;
     margin-left: 10px;

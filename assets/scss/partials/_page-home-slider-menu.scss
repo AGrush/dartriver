@@ -30,6 +30,8 @@
   &__links {
     position: relative;
     padding: 205px 0 0 40px;
+    text-decoration: none;
+    color: $mine-shaft;
 
     a {
       display: block;
@@ -38,15 +40,17 @@
       line-height: 1.02;
       font-family: Gordita-Regular;
       font-size: 30px;
+      text-decoration: none;
+      color: $mine-shaft;
     }
   }
   &__inner {
     z-index: 2;
-    height: 811px;
+    height: 100vh;
     max-width: 271px;
     width: 100%;
     background: #ffffff;
-    position: absolute;
+    position: fixed;
     left: -250px;
     top: 0px;
     visibility: hidden;

@@ -18,7 +18,7 @@ $mine-shaft: #292929;
   top: 0px;
   background-image: url("/assets/img/6.png");
   background-size: contain;
-  opacity: 0.5;
+  opacity: 0.51;
   z-index: 999;
 }
 
@@ -41,4 +41,14 @@ $mine-shaft: #292929;
 a {
   text-decoration: none;
   color: $mine-shaft;
+}
+
+#bldng1 {
+  top: 0;
+}
+#bldng2 {
+  top: 100;
+}
+#bldng3 {
+  top: 150;
 }

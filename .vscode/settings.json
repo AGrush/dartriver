@@ -8,7 +8,7 @@
     {
       "extensionName": ".min.css",
       "format": "compressed",
-      "savePath": "/dist/css"
+      "savePath": "/dist/assets/css"
     }
   ],
   "liveSassCompile.settings.excludeList": [
@@ -23,5 +23,6 @@
   // Enable per-language
   "[html]": {
     "editor.formatOnSave": false
-  }
+  },
+  "liveServer.settings.port": 5501
 }
