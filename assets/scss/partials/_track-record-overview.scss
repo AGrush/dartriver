@@ -1,0 +1,33 @@
+.track-record {
+    padding-left: 45px;
+    padding-top: 40px;
+    width: 100%;
+    height: 268px;
+    position: relative;
+    background-color: $deep-sea-green;
+    font-family: Gordita-Medium;
+    color: #ffffff;
+    &__heading {
+        color: $home-bizarre;
+        font-size: 28px;
+        display: block;
+        align-content: center;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    &__info {
+        width:341px;
+        .head {
+            font-size: 15px;
+        }
+        .inf {
+            font-family: Gordita-Regular;
+            font-size: 19px;
+        }
+    }
+}

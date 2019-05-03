@@ -4,19 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="assets/webfonts/MyFontsWebfontsKit.css"
-    />
+    <link rel="stylesheet" type="text/css" href="assets/webfonts/MyFontsWebfontsKit.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.pkgd.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="assets/scss/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.0.5/flickity.min.css" />
+    
 
     <!-- <link
       rel="stylesheet"
@@ -53,27 +46,30 @@
           <span class="slider-container__text">lose</span>
         </a>
         <div class="slider-container__links">
-          <a href="/index.html">Home</a> <br />
+          <a href="/dartriver/index.html">Home</a> <br />
           <a href="#">The team</a> <br />
           <a href="#">Contact</a> <br />
         </div>
       </div>
   </header>
   <body>
-      <div class="container-one whitebg">
-          <section class="section-one position-slides">
+    <div class="navigator" id="navigator"></div>
+    <div class="nav-circle" id="nav"></div>
+    
+      <div class="container-one whitebg" >
+          <section class="section-one position-slides" id="sec1">
             <div class="hero-slider" data-carousel>
-              <div class="carousel-cell parralax0" style="background-image:url(/assets/img/nastuh.png)">
+              <div class="carousel-cell parralax0" style="background-image:url(assets/img/nastuh.png)">
                 <div class="inner">
                   <h2 class="title">31 Broadwick Street, Soho</h2>
                 </div>
               </div>
-              <div class="carousel-cell parralax0" style="background-image:url(/assets/img/nastuh.png);">
+              <div class="carousel-cell parralax0" style="background-image:url(assets/img/nastuh.png);">
                 <div class="inner">
                   <h2 class="title">32 Broadwick Street, Soho</h2>
                 </div>
               </div>
-              <div class="carousel-cell parralax0" style="background-image:url(/assets/img/nastuh.png);">
+              <div class="carousel-cell parralax0" style="background-image:url(assets/img/nastuh.png);">
                 <div class="inner">
                   <h2 class="title">33 Broadwick Street, Soho</h2>
                 </div>
@@ -82,19 +78,19 @@
           </section>
         </div>
     <div class="container-two whitebg">
-      <section class="section-two position-slides position-slide2">
+      <section class="section-two position-slides" id="sec2">
         <div class="hero-slider" data-carousel>
-          <div class="carousel-cell parralax2" style="background-image:url(/assets/img/nastuh.png)">
+          <div class="carousel-cell parralax2" style="background-image:url(assets/img/nastuh.png)">
             <div class="inner">
               <h2 class="title">31 Broadwick Street, Soho</h2>
             </div>
           </div>
-          <div class="carousel-cell parralax2" style="background-image:url(/assets/img/nastuh.png);">
+          <div class="carousel-cell parralax2" style="background-image:url(assets/img/nastuh.png);">
             <div class="inner">
               <h2 class="title">32 Broadwick Street, Soho</h2>
             </div>
           </div>
-          <div class="carousel-cell parralax2" style="background-image:url(/assets/img/nastuh.png);" >
+          <div class="carousel-cell parralax2" style="background-image:url(assets/img/nastuh.png);" >
             <div class="inner">
               <h2 class="title">33 Broadwick Street, Soho</h2>
             </div>
@@ -104,35 +100,35 @@
     </div>
 
     <div class="container-three whitebg">
-      <section class="section-three position-slides position-slide2">
+      <section class="section-three position-slides" id="sec3">
         <div class="hero-slider" data-carousel>
-          <div class="carousel-cell parralax2" style="background-image:url(/assets/img/nastuh.png)">
+          <div class="carousel-cell parralax3" style="background-image:url(assets/img/nastuh.png)">
             <div class="inner">
               <h2 class="title">31 Broadwick Street, Soho</h2>
             </div>
           </div>
-          <div class="carousel-cell parralax2" style="background-image:url(/assets/img/nastuh.png);">
+          <div class="carousel-cell parralax3" style="background-image:url(assets/img/nastuh.png);">
             <div class="inner">
               <h2 class="title">32 Broadwick Street, Soho</h2>
             </div>
           </div>
-          <div class="carousel-cell parralax2" style="background-image:url(/assets/img/nastuh.png);" >
-            <div class="inner">
-              <h2 class="title">33 Broadwick Street, Soho</h2>
+          <div class="carousel-cell parralax3" style="background-image:url(assets/img/nastuh.png);" >
+            <div class="inner" id="sec4">
+              <h2 class="title" >33 Broadwick Street, Soho</h2>
             </div>
           </div>
         </div>
       </section>
     </div>
     <div class="track-record">
-        <p class="track-record__heading">Track record overview</p>
-        <div class="track-record__container">
-          <div class="track-record__info"><p class="head">Acquisitions</p><p class="inf"></p><p class="inf"></p></div>
-          <div class="track-record__info"><p class="head"></p><p class="inf"></p><p class="inf"></p></div>
-          <div class="track-record__info"><p class="head"></p><p class="inf"></p><p class="inf"></p></div>
-          <div class="track-record__info"><p class="head"></p><p class="inf"></p><p class="inf"></p></div>
-        </div>
+      <p class="track-record__heading">Track record overview</p>
+      <div class="track-record__container">
+        <div class="track-record__info"><p class="head">Acquisitions</p><p class="inf">31 transactions</p><p class="inf">£1,318 bn.</p></div>
+        <div class="track-record__info"><p class="head">Development</p><p class="inf">29 Projects</p><p class="inf">2.8m sq ft.</p></div>
+        <div class="track-record__info"><p class="head">Leasing</p><p class="inf">XXXX Projects</p><p class="inf">£119m.</p></div>
+        <div class="track-record__info"><p class="head">Sale</p><p class="inf">19 transactions</p><p class="inf">£2.151bn.</p></div>
       </div>
+    </div>
     <footer>
       <div class="footer">
         <p class="footer__heading">Contact</p>
@@ -148,7 +144,9 @@
       </div>
     </footer>
   </body>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
 </html>

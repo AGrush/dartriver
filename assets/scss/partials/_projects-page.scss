@@ -1,12 +1,58 @@
+.navigator{
+  position: fixed;
+  width:12px;
+  height:48px;
+  background: url(../img/scroll-inner.svg) no-repeat;
+  top: 81%;
+  left:50px;
+  transition: 1s;
+}
+
+.nav-circle{
+  position: fixed;
+  width:12px;
+  height:48px;
+  background: url(../img/scroll-outer.svg) no-repeat;
+  top: 81%;
+  left:50px;
+  opacity: 0;
+  transition: 1s;
+}
+
+
+
+.startx{
+  transform: translateY(0px);
+  opacity: 1;
+  transition: 1s;
+}
+.middlex{
+  transform: translateY(20px);
+  opacity: 1;
+  transition: 1s;
+}
+.endx{
+  transform: translateY(40px);
+  opacity: 1;
+  transition: 1s;
+}
+.hide {
+  opacity: 0;
+  transition: 1s;
+}
+
 .position-slides {
   height: 675px;
   margin: 0 0 0 158px;
-  padding: 0px;
+  padding: 20px 0 20px 100px;
+  opacity: 0.4;
+  transition: 1s;
 }
 
-.position-slide2 {
-  padding: 50px 0 0 100px;
-  opacity: 0.5;
+.show-slides {
+  padding: 0;
+  opacity: 1;
+  transition: 1s;
 }
 
 .whitebg {
@@ -94,7 +140,6 @@
       transform: translateY(2px);
       display: inline-block;
       height: 14px;
-      /* Set it to your needs */
       width: 12px;
       margin: 0px 5px 0 0;
     }
@@ -117,3 +162,4 @@
     padding-bottom: 0px;
   }
 }
+
