@@ -1,0 +1,49 @@
+////////////// FOOTER ////////////////
+
+.footer {
+  position: relative;
+  height: 239px;
+  padding-top: 45px;
+  padding-left: $padding-right;
+  background-color: $mine-shaft;
+  z-index: 1;
+  font-size: 14px;
+
+  @include mobile {
+    font-size: 12px;
+  }
+
+  @include small-mobile {
+    font-size: 12px;
+    height: 180px;
+  }
+
+  &__heading {
+    font-family: Gordita-Medium;
+    color: #ffffff;
+  }
+
+  &__text {
+    font-family: Gordita-Regular;
+    color: #ffffff;
+  }
+
+  &__disclaimer {
+    padding: 50px 0 50px 38px;
+    color: #ffffff;
+  }
+
+  &__text-disclaimer {
+    font-family: Gordita-Regular;
+    color: $mine-shaft;
+    padding-right: 20px;
+
+    @include mobile {
+      font-size: 12px;
+    }
+
+    @include small-mobile {
+      font-size: 12px;
+    }
+  }
+}

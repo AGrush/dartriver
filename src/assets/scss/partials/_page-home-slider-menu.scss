@@ -1,0 +1,81 @@
+.slider-container {
+  position: relative;
+}
+
+.clickAway {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  visibility: hidden;
+}
+
+.slider-container {
+  &__link {
+    position: relative;
+    font-family: Gordita-Regular;
+    font-size: 13px;
+    top: 23px;
+    padding-left: 42px;
+    z-index: 4;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    &:before {
+      content: "";
+      background: url(../img/C.svg) no-repeat;
+      transform: translateY(5px) translateX(-3px);
+      display: inline-block;
+      height: 21px;
+      /* Set it to your needs */
+      width: 19px;
+      margin: 0px 0px 0 0;
+    }
+  }
+
+  &__links {
+    position: relative;
+    padding: 205px 0 0 40px;
+    text-decoration: none;
+    color: $mine-shaft;
+
+    a {
+      display: block;
+      margin-bottom: 17px;
+      letter-spacing: 1px;
+      line-height: 1.02;
+      font-family: Gordita-Regular;
+      font-size: 30px;
+      text-decoration: none;
+      color: $mine-shaft;
+    }
+  }
+
+  &__inner {
+    z-index: 2;
+    height: 100vh;
+    max-width: 271px;
+    width: 100%;
+    background: #ffffff;
+    position: fixed;
+    left: -250px;
+    top: 0px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s all linear;
+
+    &.active {
+      visibility: visible;
+      pointer-events: inherit;
+      transition: 0.2s all ease-in-out;
+      opacity: 1;
+      left: 0;
+    }
+  }
+}

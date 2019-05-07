@@ -1,0 +1,119 @@
+// .is-selected {
+// }
+// .flickity-viewport {
+//   height: 80%;
+// }
+// div.carousel-cell.is-selected {
+//   margin-right: 10px;
+//   .inner {
+//     .title {
+//       opacity: 1;
+//       transition: opacity 0.4s;
+//     }
+//   }
+// }
+// div.carousel-cell {
+//   margin-left: 10px;
+// }
+
+.hero-slider {
+  width: 100%;
+  height: 700px;
+
+  .carousel-cell {
+    margin-left: 10px;
+    background-position: center center !important;
+
+    @include tablet {
+      height: 412px;
+    }
+    &:not(.is-selected) .inner .title {
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    .is-selected {
+      margin-right: 10px;
+      .inner {
+        .title {
+          opacity: 1;
+          transition: opacity 0.4s;
+        }
+      }
+    }
+    //   display: block;
+    // height: 200px;
+    // /* set min-width,
+    //    allow images to determine cell width */
+
+    // margin-right: 10px;
+    width: 90%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .inner {
+      position: relative;
+      top: 590px;
+
+      color: $mine-shaft;
+      text-align: center;
+      z-index: 20;
+
+      .title {
+        font-size: 28;
+        text-align: left;
+        color: $mine-shaft;
+        font-family: Gordita-Medium;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+      }
+      .btn {
+        border: 1px solid #fff;
+        padding: 14px 18px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+  .flickity-button.previous {
+    left: 91%;
+  }
+  .flickity-prev-next-button {
+    top: 630px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+    .arrow {
+      fill: black;
+    }
+  }
+  .flickity-page-dots {
+    bottom: 30px;
+    .dot {
+      width: 30px;
+      height: 4px;
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.5);
+      border: 0 solid white;
+      border-radius: 0;
+      &.is-selected {
+        background: #ff0000;
+        border: 0 solid #ff0000;
+      }
+    }
+  }
+}

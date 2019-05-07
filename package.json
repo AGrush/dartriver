@@ -1,7 +1,6 @@
 {
   "name": "dartriver",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +11,28 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.1.7",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "gulp-cache": "^1.1.1",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "imagemin-zopfli": "^6.0.0"
+  },
   "bugs": {
     "url": "https://github.com/AGrush/dartriver/issues"
   },
-  "homepage": "https://github.com/AGrush/dartriver#readme"
+  "homepage": "https://github.com/AGrush/dartriver#readme",
+  "keywords": [],
+  "description": ""
 }

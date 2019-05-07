@@ -1,0 +1,107 @@
+.hero-slider-projects {
+  width: 100%;
+  height: 801px;
+
+  .flickity-viewport {
+    width: 100%;
+  }
+  .carousel-cell {
+    margin-left: 0px;
+    width: 50%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    .button {
+      position: relative;
+      width: 222px;
+      height: 33px;
+      top: 520px;
+      left: 40px;
+      background-color: #ffffff;
+      z-index: 28;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        cursor: pointer;
+      }
+      .svg-plus-minus {
+        width: 10px;
+        height: 11px;
+        text-align: center;
+        z-index: 25;
+        background-image: url(../img/X.svg);
+        transform: rotate(45deg);
+      }
+    }
+    .inner {
+      position: relative;
+      top: 627px;
+      left: 100px;
+      color: $mine-shaft;
+      text-align: left;
+      z-index: 20;
+
+      .title {
+        font-size: 15px;
+        font-family: Gordita-Medium;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+      .email {
+        font-size: 15px;
+        font-family: Gordita-Regular;
+      }
+      .btn {
+        border: 1px solid #fff;
+        padding: 14px 18px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 3px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover {
+          background: #fff;
+          color: #000;
+        }
+      }
+    }
+  }
+  .flickity-button.previous {
+    left: 91%;
+  }
+  .flickity-button.next {
+    left: 95%;
+  }
+  .flickity-prev-next-button {
+    top: 630px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+    .arrow {
+      fill: black;
+    }
+  }
+  .flickity-page-dots {
+    bottom: 30px;
+    .dot {
+      width: 30px;
+      height: 4px;
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.5);
+      border: 0 solid white;
+      border-radius: 0;
+      &.is-selected {
+        background: #ff0000;
+        border: 0 solid #ff0000;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+$font-size: 20px;
+$main-padding: 0px;
+$padding-right: 38px;
+//Home page text
+$text-dark: #292929;
+$text-dark-blue: #0d5071;
+$text-grey: #e9ddcf;
+//Home page bgs
+$home-gallery: #ededed;
+$home-bizarre: #e9ddcf;
+$deep-sea-green: #0d5071;
+$mine-shaft: #292929;
+
+.lineup {
+  position: absolute;
+  width: 1440px;
+  height: 811px;
+  top: 0px;
+  background-image: url("/assets/img/6.png");
+  background-size: contain;
+  opacity: 0.5;
+  z-index: 999;
+}
+
+html {
+  scrollbar-width: none;
+  /*For Firefox*/
+  -ms-overflow-style: none;
+  /*For IE and Edge*/
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+  /*For Chrome, Safari and Opera*/
+}
+
+.scroll-wrapper {
+  overflow-x: scroll;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: $mine-shaft;
+}
+
+#bldng1 {
+  top: 0;
+}
+
+#bldng2 {
+  top: 100;
+}
+
+#bldng3 {
+  top: 150;
+}
+
+*:focus {
+  outline: none;
+}
