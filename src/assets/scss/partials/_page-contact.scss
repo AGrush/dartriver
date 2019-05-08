@@ -1,23 +1,20 @@
-.background-grey {
-  background-color: $home-gallery;
+#contact-map {
+  position: relative;
+  height: 500px;
+  width: 100%;
 }
 
-.header {
+.header-contact {
   color: $text-dark;
   width: 100%;
-  overflow: hidden;
-  height: 811px;
 
   @include tablet {
-    height: 600px;
   }
 
   @include mobile {
-    height: 600px;
   }
 
   @include small-mobile {
-    height: 600px;
   }
 
   &__container {
@@ -33,7 +30,7 @@
     padding: 30px 0 23px;
 
     @include small-mobile {
-      padding: 30px 0 43px;
+      padding: 30px 0 50px;
     }
   }
 
@@ -114,12 +111,12 @@
     margin: 0 auto;
     padding-bottom: 30px;
     display: block;
-    max-width: 222px;
+    width: 222px;
     height: 64px;
     background: url(../img/logo.svg) no-repeat;
 
     @include small-mobile {
-      max-width: 200px;
+      padding-bottom: 50px;
     }
   }
 
@@ -127,10 +124,26 @@
     transform: translateY(-31px);
     width: 191px;
     padding-bottom: 0px;
+  }
+}
 
-    @include small-mobile {
-      max-width: 200px;
-      
+.contact-details {
+  padding: 50px 0 20px 30px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: Gordita-Regular;
+  font-size: 13px;
+  &__address {
+    max-width: 200px;
+    margin-right: 100px;
+    p {
+    }
+  }
+
+  &__contact {
+    max-width: 200px;
+    p {
     }
   }
 }

@@ -1,24 +1,85 @@
 .more-info {
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: 584px;
   background-color: $home-bizarre;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 50px;
+  @include tablet {
+    height: auto;
+  }
+  @include mobile {
+    height: auto;
+  }
+  @include small-mobile {
+    height: auto;
+  }
+  &__left {
+    max-width: 50%;
+    min-width: 202px;
+    @include mobile {
+      max-width: 45%;
+    }
+    @include small-mobile {
+      max-width: 90%;
+    }
+  }
 
   &__header {
-    width: 590px;
-    padding: 79px 0 0 153px;
+    padding: 50px 40px 0 140px;
     font-size: 50px;
     font-family: Gordita-Medium;
     color: $text-dark-blue;
+
+    @include tablet {
+      padding: 50px 0px 0 65px;
+      font-size: 30px;
+    }
+
+    @include mobile {
+      padding: 50px 0px 0 65px;
+      font-size: 30px;
+    }
+
+    @include small-mobile {
+      padding: 50px 0px 0 30px;
+      font-size: 25px;
+    }
+  }
+
+  &__right {
+    max-width: 40%;
+    font-size: 18px;
+    padding: 94px 20px 0 65px;
+    //min-width: 202px;
+    //padding: 0 20px 0 80px;
+
+    @include tablet {
+      max-width: 35%;
+      padding: 76px 0px 0 65px;
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    @include mobile {
+      max-width: 35%;
+      padding: 76px 0px 0 55px;
+      font-size: 15px;
+    }
+
+    @include small-mobile {
+      max-width: 90%;
+      padding: 0px 20px 0 30px;
+      font-size: 15px;
+    }
   }
 
   &__text-container {
-    padding: 84px 0 0 20px;
+    max-width: 400px;
   }
 
   &__text {
-    width: 500px;
-    font-size: 18px;
     font-family: Gordita-Regular;
   }
 }
@@ -30,6 +91,11 @@
   padding: 0px 0 0px 0px;
   opacity: 1;
   transition: 1s;
+}
+.hide-on-small-mobile {
+  @include small-mobile {
+    display: none;
+  }
 }
 
 .show-slides2 {
@@ -51,10 +117,22 @@
 }
 
 .extra-height {
-  height: 650px;
+  height: 700px;
   width: 100%;
   position: relative;
   display: block;
+
+  @include tablet {
+    height: 550px;
+  }
+
+  @include mobile {
+    height: 488px;
+  }
+
+  @include small-mobile {
+    height: 0px;
+  }
 }
 
 .overlay {
@@ -63,14 +141,31 @@
   position: absolute;
   width: 50vw;
   left: 0vw;
-  font-size: 13px;
+
   font-family: Gordita-Regular;
-  z-index: 30;
+  z-index: 999;
 
   .copy {
     background-color: #f5f5f5;
-    height: 580px;
+    font-size: 13px;
+    height: 432px;
     padding: 75px;
+    z-index: 999;
+
+    @include tablet {
+      padding: 65px 25px 0;
+      height: 435px;
+    }
+
+    @include mobile {
+      height: 376px;
+      padding: 65px 25px 0;
+    }
+
+    @include small-mobile {
+      height: 251px;
+      padding: 65px 25px 0;
+    }
   }
 
   .seethrough {
@@ -86,10 +181,6 @@
 
 .hidden {
   visibility: none;
-}
-
-.visible {
-  visibility: initial;
 }
 
 .visibleL {
@@ -108,9 +199,76 @@
 
 .clickOff {
   top: 0;
+  //background-color: red;
   width: 100%;
-  height: 100%;
+  height: 1200px;
   z-index: 29;
   position: absolute;
   visibility: hidden;
+}
+
+.visible {
+  visibility: initial;
+}
+
+.mobile-content {
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include mobile {
+    display: none;
+  }
+
+  height: auto;
+
+  &__container {
+  }
+
+  &__person1 {
+  }
+
+  &__person1-img {
+    height: 0;
+    padding-top: 60%;
+    background-color: $home-gallery;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+  }
+
+  &__person1-header {
+    position: relative;
+    padding: 30px;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+
+  &__person1-title {
+    font-size: 15px;
+    font-family: Gordita-Medium;
+    line-height: 1.2em;
+
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  &__person1-email {
+    font-size: 13px;
+    font-family: Gordita-Regular;
+  }
+
+  &__person1-body {
+    font-size: 12px;
+    font-family: Gordita-Regular;
+    line-height: 1.2em;
+    padding: 30px;
+    padding-top: 5px;
+
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
 }

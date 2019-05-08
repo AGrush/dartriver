@@ -7,6 +7,14 @@
   top: 61%;
   left: 50px;
   transition: 1s;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include small-mobile {
+    display: none;
+  }
 }
 
 .nav-circle {
@@ -18,6 +26,14 @@
   left: 50px;
   opacity: 0;
   transition: 1s;
+
+  @include mobile {
+    display: none;
+  }
+
+  @include small-mobile {
+    display: none;
+  }
 }
 
 .startx {
@@ -55,6 +71,18 @@
   @include tablet {
     height: 462px;
   }
+
+  @include mobile {
+    height: 462px;
+    margin: 0 0 0 10px;
+    padding: 20px 0 20px 0px;
+  }
+
+  @include small-mobile {
+    height: 422px;
+    margin: 0 0 0 10px;
+    padding: 20px 0 20px 0px;
+  }
 }
 
 .show-slides {
@@ -65,6 +93,18 @@
 
 .whitebg {
   background-color: #ffffff;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+
+  @include small-mobile {
+    margin-bottom: 20px;
+  }
 }
 
 .header-products {
@@ -79,12 +119,19 @@
     //max-width: 1440px;
     position: relative;
     margin: 0 $padding-right;
+    @include small-mobile {
+      margin: 0 20px;
+    }
   }
 
   &__top {
     position: relative;
     display: flex;
     padding: 30px 0 23px;
+    @include small-mobile {
+      padding-bottom: 32px;
+      padding-left: 0;
+    }
   }
 
   &__menu {
@@ -133,7 +180,9 @@
     height: 20px;
     //line-height: 1.5;
     position: relative;
-
+    @include small-mobile {
+      display: none;
+    }
     &:hover {
       text-decoration: none;
       color: $mine-shaft;
@@ -149,6 +198,9 @@
     width: 185px;
     height: 64px;
     background: url(../img/logo.svg) no-repeat;
+    @include small-mobile {
+      width: 165px;
+    }
   }
 
   &__logo-higher {
@@ -161,14 +213,22 @@
 //maps stuff
 #map {
   height: 811px;
+  @include tablet {
+    height: 650px;
+  }
+
+  @include mobile {
+    height: 600px;
+  }
+  @include small-mobile {
+    height: 500px;
+  }
 }
 
 .map-container {
   position: relative;
 }
-.gm-style > div:nth-child(10) {
-  display: none;
-}
+
 .info-window {
   font-family: Gordita-Regular;
   display: inline-block;
@@ -179,25 +239,120 @@
   left: 43px;
   z-index: 9999;
 
+  @include tablet {
+    top: 0;
+    left: 0;
+    max-width: 250px;
+  }
+
+  @include mobile {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 185px;
+  }
+
+  @include small-mobile {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 185px;
+  }
+
   &__image {
     width: 100%;
-    height: 190px;
+    height: 170px;
+    float: left;
     background-position: 50% 50%;
     background-repeat: none;
     background-size: cover;
+    margin-bottom: 20px;
+
+    @include mobile {
+      display: inline-block;
+      width: 50%;
+      height: 185px;
+    }
+    @include small-mobile {
+      display: inline-block;
+      width: 50%;
+      height: 185px;
+    }
   }
 
-  //&__container {}
+  &__copy-container {
+    @include mobile {
+      display: inline-block;
+      width: 50%;
+      margin: 0px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    @include small-mobile {
+      display: inline-block;
+      width: 50%;
+      margin: 0px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+  }
 
   &__heading {
     color: $text-dark-blue;
     font-size: 20px;
     margin: 20px;
+
+    @include mobile {
+      display: inline-block;
+      font-size: 15px;
+      width: 40%;
+      margin: 0px;
+      padding-bottom: 15px;
+      padding-left: 4%;
+    }
+
+    @include small-mobile {
+      display: inline-block;
+      font-size: 15px;
+      width: 80%;
+      margin: 0px;
+      padding-bottom: 15px;
+      padding-left: 4%;
+    }
   }
 
   &__copy {
     font-size: 14px;
     margin: 20px;
+    @include tablet {
+      font-size: 14px;
+      display: inline-block;
+      //width: 40%;
+      margin: 0px;
+      padding-bottom: 10px;
+      padding-left: 8%;
+      padding-right: 10%;
+    }
+
+    @include mobile {
+      font-size: 12px;
+      display: inline-block;
+      //width: 40%;
+      margin: 0px;
+      padding-bottom: 10px;
+      padding-left: 4%;
+      padding-right: 10%;
+    }
+
+    @include small-mobile {
+      font-size: 12px;
+      display: inline-block;
+      //width: 40%;
+      margin: 0px;
+      padding-bottom: 10px;
+      padding-left: 4%;
+      padding-right: 10%;
+    }
   }
 
   &__getintouch {
@@ -205,6 +360,24 @@
     margin: 20px;
     margin-right: 40%;
     margin-bottom: 40px;
+    @include tablet {
+      margin-right: 10%;
+    }
+
+    @include mobile {
+      font-size: 10px;
+      display: inline-block;
+      width: 60%;
+      margin: 0px;
+      padding-left: 4%;
+    }
+    @include small-mobile {
+      font-size: 10px;
+      display: inline-block;
+      width: 80%;
+      margin: 0px;
+      padding-left: 4%;
+    }
 
     a {
       color: $text-dark-blue;

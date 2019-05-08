@@ -1,19 +1,17 @@
-var infoWindow = document.querySelector(".info-window");
-
 function initMap() {
   const viewAreaDesktop = {
-    lat: 51.505,
-    lng: -0.14
+    lat: 51.518723,
+    lng: -0.142438
   };
 
   const viewAreaTablet = {
-    lat: 51.515,
-    lng: -0.12
+    lat: 51.518723,
+    lng: -0.142438
   };
 
   const viewAreaMobile = {
-    lat: 51.52,
-    lng: -0.13
+    lat: 51.518723,
+    lng: -0.142438
   };
 
   var windowWidth = $(window).width();
@@ -21,10 +19,9 @@ function initMap() {
   var options = (() => {
     if (windowWidth <= 550)
       return (options = {
-        zoom: 11.9,
+        zoom: 16.0,
         center: viewAreaMobile,
         gestureHandling: "none",
-        zoomControl: false,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -32,10 +29,9 @@ function initMap() {
       });
     else if (windowWidth > 550 && windowWidth <= 768)
       return (options = {
-        zoom: 12.3,
+        zoom: 16.0,
         center: viewAreaTablet,
         gestureHandling: "none",
-        zoomControl: false,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -43,10 +39,9 @@ function initMap() {
       });
     else
       return (optons = {
-        zoom: 13.0,
+        zoom: 16.0,
         center: viewAreaDesktop,
         gestureHandling: "none",
-        zoomControl: false,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -56,25 +51,13 @@ function initMap() {
 
   var markers = [];
 
-  const mapDiv = document.querySelector("#map");
+  const mapDiv = document.querySelector("#contact-map");
 
   const map = new google.maps.Map(mapDiv, options);
   ////////////////////////////////////////////////////////
 
   const drawMap = () => {
     mapLabels.map(label => {
-      const labelTemplate = `
-                <div class="info-window__image" style="background-image:url('${
-                  label.imgUrl
-                }')">
-                </div>
-                <div class="info-window__copy-container">
-                    <p class="info-window__heading">${label.heading}</p>
-                    <p class="info-window__copy">${label.copy}</p>
-                    <p class="info-window__getintouch">For more information, please get <a>in touch</a></p>
-                </div>
-            `;
-
       function restoreColors() {
         for (var i = 0; i < markers.length; i++) {
           markers[i].setIcon(pinSymbol(markers[i].originalColor));
@@ -84,7 +67,6 @@ function initMap() {
       function changeColor() {
         restoreColors();
         this.setIcon(pinSymbol("#C88F4D"));
-        infoWindow.innerHTML = labelTemplate;
       }
 
       function pinSymbol(color) {
@@ -118,76 +100,16 @@ function initMap() {
   drawMap();
 }
 
-//Media Queriessss
-// $(window).bind("resize", function() {
-//   var width = window.innerWidth;
-//   if (width < 1024){
-//     scene1.duration(200);
-//     scene1.offset(30);
-//   } else if (width >= 1024 ) {
-//     scene1.duration($("#sec1").height() + 0)
-//     scene1.offset(0);
-//   }
-// })
-
 const mapLabels = [
   {
     title: "A",
     pos: {
-      lat: 51.5037,
-      lng: -0.0935
+      lat: 51.5194,
+      lng: -0.1429
     },
     color: "#0D5071",
     imgUrl: "assets/img/nastuh.png",
     heading: "Borough",
-    copy:
-      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
-  },
-  {
-    title: "G",
-    pos: {
-      lat: 51.516659,
-      lng: -0.1117
-    },
-    color: "#0D5071",
-    imgUrl: "assets/img/homepage1.png",
-    heading: "asfds te omnis patriotique.",
-    copy:
-      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
-  },
-  {
-    title: "B",
-    pos: {
-      lat: 51.50196,
-      lng: -0.139215
-    },
-    color: "#0D5071",
-    imgUrl: "assets/img/nastuh.png",
-    heading: "asdfsdf",
-    copy:
-      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
-  },
-  {
-    title: "T",
-    pos: {
-      lat: 51.5111,
-      lng: -0.14
-    },
-    color: "#0D5071",
-    imgUrl: "assets/img/nastuh.png",
-    heading: "Picadilly",
-    copy:
-      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
-  },
-  {
-    title: "P",
-    pos: {
-      lat: 51.495,
-      lng: -0.1606
-    },
-    color: "#0D5071",
-    imgUrl: "assets/img/nastuh.png",
-    heading: "Sloane Square",
     copy:
       "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
   }
