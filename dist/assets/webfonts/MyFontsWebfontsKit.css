@@ -28,29 +28,29 @@
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/39499c");
 
-@font-face {
+/* @font-face {
   font-family: "Gordita-Bold";
   src: url("webfonts/39499C_0_0.eot");
-  src: url("webfonts/39499C_0_0.eot?#iefix") format("embedded-opentype"),
-    url("webfonts/39499C_0_0.woff2") format("woff2"),
-    url("webfonts/39499C_0_0.woff") format("woff"),
-    url("webfonts/39499C_0_0.ttf") format("truetype");
-}
+  src: url("webfonts/39499C_0_0.eot?#iefix") format("embedded-opentype");
+  src: url("webfonts/39499C_0_0.woff2") format("woff2");
+  src: url("webfonts/39499C_0_0.woff") format("woff");
+  src: url("webfonts/39499C_0_0.ttf") format("truetype");
+} */
 
 @font-face {
   font-family: "Gordita-Medium";
   src: url("webfonts/39499C_1_0.eot");
-  src: url("webfonts/39499C_1_0.eot?#iefix") format("embedded-opentype"),
-    url("webfonts/39499C_1_0.woff2") format("woff2"),
-    url("webfonts/39499C_1_0.woff") format("woff"),
-    url("webfonts/39499C_1_0.ttf") format("truetype");
+  src: url("webfonts/39499C_1_0.eot?#iefix") format("embedded-opentype");
+  src: url("webfonts/39499C_1_0.woff2") format("woff2");
+  src: url("webfonts/39499C_1_0.woff") format("woff");
+  src: url("webfonts/39499C_1_0.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Gordita-Regular";
   src: url("webfonts/39499C_2_0.eot");
-  src: url("webfonts/39499C_2_0.eot?#iefix") format("embedded-opentype"),
-    url("webfonts/39499C_2_0.woff2") format("woff2"),
-    url("webfonts/39499C_2_0.woff") format("woff"),
-    url("webfonts/39499C_2_0.ttf") format("truetype");
+  src: url("webfonts/39499C_2_0.eot?#iefix") format("embedded-opentype");
+  src: url("webfonts/39499C_2_0.woff2") format("woff2");
+  src: url("webfonts/39499C_2_0.woff") format("woff");
+  src: url("webfonts/39499C_2_0.ttf") format("truetype");
 }

@@ -34,7 +34,6 @@ button.forEach(btn => {
       btn.firstElementChild.classList.toggle("rotate45");
       clickOff.classList.toggle("visible");
       prevNextBtn.forEach(x => {
-        console.log(x);
         x.style.display = "none";
       });
       logo.style.display = "none";
@@ -43,7 +42,6 @@ button.forEach(btn => {
       btn.firstElementChild.classList.toggle("rotate45");
       clickOff.classList.toggle("visible");
       prevNextBtn.forEach(x => {
-        console.log(x);
         x.style.display = "none";
       });
       logo.style.display = "none";
@@ -54,7 +52,6 @@ button.forEach(btn => {
 clickOff.addEventListener("click", () => {
   clickOff.classList.toggle("visible");
   prevNextBtn.forEach(x => {
-    console.log(x);
     x.style.display = "initial";
   });
   button.forEach(item => {

@@ -1,4 +1,4 @@
-function initMap() {
+function initMap2() {
   const viewAreaDesktop = {
     lat: 51.518723,
     lng: -0.142438
@@ -22,6 +22,7 @@ function initMap() {
         zoom: 16.0,
         center: viewAreaMobile,
         gestureHandling: "none",
+        zoomControl: false,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -32,6 +33,7 @@ function initMap() {
         zoom: 16.0,
         center: viewAreaTablet,
         gestureHandling: "none",
+        zoomControl: false,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -42,6 +44,7 @@ function initMap() {
         zoom: 16.0,
         center: viewAreaDesktop,
         gestureHandling: "none",
+        zoomControl: false,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
