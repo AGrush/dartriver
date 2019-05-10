@@ -1369,6 +1369,11 @@ a {
       color: #0d5071;
       cursor: pointer; }
 
+#map {
+  background-image: url(../img/map-fallback.png);
+  background-position: 50% 50%;
+  background-size: cover; }
+
 .hero-slider {
   width: 100%;
   height: 700px; }
@@ -2248,3 +2253,8 @@ a {
     margin-right: 100px; }
   .contact-details__contact {
     max-width: 200px; }
+
+#contact-map {
+  background-image: url(../img/map-fallback-contact.png);
+  background-position: 50% 50%;
+  background-size: cover; }
