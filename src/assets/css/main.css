@@ -498,7 +498,8 @@ a {
   .footer__text-disclaimer {
     font-family: Gordita-Regular;
     color: #292929;
-    padding-right: 20px; }
+    padding-right: 20px;
+    font-size: 13px; }
     @media (min-width: 550px) and (max-width: 767px) {
       .footer__text-disclaimer {
         font-size: 12px; } }
@@ -1014,7 +1015,7 @@ a {
 .slider-container__inner {
   z-index: 2;
   height: 100vh;
-  max-width: 271px;
+  max-width: 370px;
   width: 100%;
   background: #ffffff;
   position: fixed;
@@ -1374,6 +1375,24 @@ a {
   background-position: 50% 50%;
   background-size: cover; }
 
+@-webkit-keyframes slidein {
+  from {
+    margin-top: 50%;
+    opacity: 0; }
+  to { } }
+
+@keyframes slidein {
+  from {
+    margin-top: 50%;
+    opacity: 0; }
+  to { } }
+
+.animateInfo {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein; }
+
 .hero-slider {
   width: 100%;
   height: 700px; }
@@ -1521,7 +1540,7 @@ a {
       width: 222px;
       height: 33px;
       top: 520px;
-      left: 40px;
+      left: 70px;
       background-color: #ffffff;
       z-index: 28;
       display: -webkit-box;
@@ -1559,8 +1578,8 @@ a {
                 transform: rotate(45deg); }
     .hero-slider-projects .carousel-cell .inner {
       position: relative;
-      top: 617px;
-      left: 140px;
+      top: 640px;
+      left: 80px;
       color: #292929;
       text-align: left;
       z-index: 20; }
@@ -1579,9 +1598,9 @@ a {
       .hero-slider-projects .carousel-cell .inner .title {
         font-size: 15px;
         font-family: Gordita-Medium;
-        line-height: 1.2em;
+        line-height: 0.8em;
         letter-spacing: 1px;
-        margin-bottom: 10px; }
+        margin-bottom: 0px; }
         @media (min-width: 550px) and (max-width: 767px) {
           .hero-slider-projects .carousel-cell .inner .title {
             font-size: 13px; } }
@@ -1589,8 +1608,10 @@ a {
           .hero-slider-projects .carousel-cell .inner .title {
             font-size: 13px; } }
       .hero-slider-projects .carousel-cell .inner .email {
+        color: #b3afaf;
         font-size: 15px;
-        font-family: Gordita-Regular; }
+        font-family: Gordita-Regular;
+        margin-top: 8px; }
         @media (min-width: 550px) and (max-width: 767px) {
           .hero-slider-projects .carousel-cell .inner .email {
             font-size: 11px; } }
@@ -1735,7 +1756,7 @@ a {
 
 .more-info {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   height: 584px;
   background-color: #e9ddcf;
   display: -webkit-box;
@@ -1756,7 +1777,7 @@ a {
     .more-info {
       height: auto; } }
   .more-info__left {
-    max-width: 50%;
+    width: 50%;
     min-width: 202px; }
     @media (min-width: 550px) and (max-width: 767px) {
       .more-info__left {
@@ -1765,7 +1786,9 @@ a {
       .more-info__left {
         max-width: 90%; } }
   .more-info__header {
-    padding: 50px 40px 0 140px;
+    padding: 50px 10vw 0 10vw;
+    float: right;
+    right: 10%;
     font-size: 50px;
     font-family: Gordita-Medium;
     color: #0d5071; }
@@ -1782,15 +1805,17 @@ a {
         padding: 50px 0px 0 30px;
         font-size: 25px; } }
   .more-info__right {
-    max-width: 40%;
-    font-size: 18px;
-    padding: 94px 20px 0 65px; }
+    width: 45%;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+    font-weight: 100;
+    padding: 94px 20px 0 20px; }
     @media (min-width: 768px) and (max-width: 1023px) {
       .more-info__right {
         max-width: 35%;
         padding: 76px 0px 0 65px;
-        font-size: 15px;
-        text-align: justify; } }
+        font-size: 15px; } }
     @media (min-width: 550px) and (max-width: 767px) {
       .more-info__right {
         max-width: 35%;
@@ -1801,10 +1826,10 @@ a {
         max-width: 90%;
         padding: 0px 20px 0 30px;
         font-size: 15px; } }
-  .more-info__text-container {
-    max-width: 400px; }
   .more-info__text {
-    font-family: Gordita-Regular; }
+    font-family: Gordita-Regular;
+    margin-bottom: 40px;
+    max-width: 460px; }
 
 .position-slides2 {
   height: 801px;
@@ -2121,7 +2146,8 @@ a {
     padding-top: 25px;
     width: 80%;
     letter-spacing: 0.5px;
-    font-size: 13px;
+    line-height: 1.45;
+    font-size: 12px;
     font-family: Gordita-Regular; }
     .portal-form__footer a {
       color: #0d5071; }
@@ -2237,7 +2263,7 @@ a {
     padding-bottom: 0px; }
 
 .contact-details {
-  padding: 50px 0 20px 30px;
+  padding: 50px 0 20px 38px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;

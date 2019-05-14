@@ -1,6 +1,6 @@
 .more-info {
   position: relative;
-  max-width: 100%;
+  width: 100%;
   height: 584px;
   background-color: $home-bizarre;
   display: flex;
@@ -16,7 +16,7 @@
     height: auto;
   }
   &__left {
-    max-width: 50%;
+    width: 50%;
     min-width: 202px;
     @include mobile {
       max-width: 45%;
@@ -27,7 +27,9 @@
   }
 
   &__header {
-    padding: 50px 40px 0 140px;
+    padding: 50px 10vw 0 10vw;
+    float: right;
+    right: 10%;
     font-size: 50px;
     font-family: Gordita-Medium;
     color: $text-dark-blue;
@@ -49,9 +51,12 @@
   }
 
   &__right {
-    max-width: 40%;
-    font-size: 18px;
-    padding: 94px 20px 0 65px;
+    width: 45%;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+    font-weight: 100;
+    padding: 94px 20px 0 20px;
     //min-width: 202px;
     //padding: 0 20px 0 80px;
 
@@ -59,7 +64,6 @@
       max-width: 35%;
       padding: 76px 0px 0 65px;
       font-size: 15px;
-      text-align: justify;
     }
 
     @include mobile {
@@ -75,12 +79,11 @@
     }
   }
 
-  &__text-container {
-    max-width: 400px;
-  }
 
   &__text {
     font-family: Gordita-Regular;
+    margin-bottom: 40px;
+    max-width: 460px;
   }
 }
 
@@ -272,3 +275,16 @@
     background-color: #fff;
   }
 }
+
+
+// #overlayting{
+//   background-image: url("../img/delete.png");
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-position: 0% 0%;
+//   opacity: 0.4;
+//   background-color: #cccccc;
+//   height: 2000px;
+//   width: 100%;
+
+// }

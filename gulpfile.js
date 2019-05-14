@@ -160,4 +160,4 @@ gulp.task("watch", function() {
 });
 
 // All tasks together
-gulp.task("default", ["folders", "html", "sass", "uglify", "imagemin"]);
+gulp.task("default", ["folders", "html", "sass", "uglify"]);//, "imagemin"

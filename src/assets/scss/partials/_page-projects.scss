@@ -230,6 +230,7 @@
 }
 
 .info-window {
+  
   font-family: Gordita-Regular;
   display: inline-block;
   position: absolute;
@@ -390,4 +391,21 @@
   background-image: url(../img/map-fallback.png);
   background-position: 50% 50%;
   background-size: cover;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-top: 50%;
+    opacity: 0;
+  }
+
+  to {
+    
+  }
+}
+
+.animateInfo {
+  animation-duration: 1s;
+  animation-name: slidein;
 }

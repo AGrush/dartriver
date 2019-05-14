@@ -61,6 +61,11 @@ function initMap() {
   const map = new google.maps.Map(mapDiv, options);
   ////////////////////////////////////////////////////////
 
+  function removeAnimateClass(){
+    setTimeout(function(){ 
+      infoWindow.classList.remove('animateInfo'); 
+    }, 1000);
+  }
   const drawMap = () => {
     mapLabels.map(label => {
       const labelTemplate = `
@@ -84,7 +89,9 @@ function initMap() {
       function changeColor() {
         restoreColors();
         this.setIcon(pinSymbol("#C88F4D"));
+        infoWindow.classList.add('animateInfo')
         infoWindow.innerHTML = labelTemplate;
+        removeAnimateClass();
       }
 
       function pinSymbol(color) {
@@ -106,18 +113,33 @@ function initMap() {
           map: map,
           position: position,
           icon: pinSymbol(color),
-          originalColor: color
+          originalColor: '#0D5071'
         });
         marker.addListener("click", changeColor);
         markers.push(marker);
         return marker;
+        
       }
+
+      
     });
   };
 
   drawMap();
 }
+// var simulateClick = function (elem) {
+//   // Create our event (with options)
+//   var evt = new MouseEvent('click', {
+//     bubbles: true,
+//     cancelable: true,
+//     view: window
+//   });
+//   // If cancelled, don't dispatch our event
+//   var canceled = !elem.dispatchEvent(evt);
+// };
 
+// var someLink = document.querySelector('markerx');
+// simulateClick(someLink);
 //Media Queriessss
 // $(window).bind("resize", function() {
 //   var width = window.innerWidth;
@@ -137,7 +159,7 @@ const mapLabels = [
       lat: 51.5037,
       lng: -0.0935
     },
-    color: "#0D5071",
+    color: "#C88F4D",
     imgUrl: "assets/img/nastuh.png",
     heading: "Borough",
     copy:
