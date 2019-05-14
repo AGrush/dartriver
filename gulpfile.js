@@ -156,6 +156,7 @@ gulp.task("sass", function() {
 gulp.task("watch", function() {
   gulp.watch("src/assets/scss/**/*.scss", ["sass"]);
   gulp.watch("src/*.html", ["html"]);
+  gulp.watch("src/assets/js/*.js", ["uglify"]);
   // gulp.watch("src/assetsjs/*.js", ["uglify"]);
 });
 

@@ -4,24 +4,48 @@
   background-color: $home-gallery;
   color: $text-dark;
   width: 100%;
-}
-
-.section-one-home {
-  height: 605px;
-  margin: 0 0 0 $padding-right;
-  padding: 40px 0 0 0;
-  overflow: hidden;
-
+  height:85vh;
+  background-image: url(../img/homepage1.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 60vw 60vh;
   @include tablet {
-    height: 395px;
+   
   }
 
   @include mobile {
-    height: 395px;
+    
   }
 
   @include small-mobile {
-    height: 395px;
+    background-size: 40vw 35vh;
+  }
+}
+    
+
+.section-one-home {
+  height:85vh;
+  // height: 605px;
+  //height:60vh;
+  margin: 0 0 0 $padding-right;
+  padding: 40px 0 0 0;
+  overflow: hidden;
+  display: block;
+  position: relative;
+
+  @include tablet {
+    // height: 395px;
+    //height:90vh;
+  }
+
+  @include mobile {
+    // height: 395px;
+    //height:90vh;
+  }
+
+  @include small-mobile {
+    // height: 395px;
+    //height:90vh;
     padding: 20px 0 0 0;
   }
 
@@ -145,23 +169,27 @@
 
   &__img-building {
     z-index: 0;
-    width: 63%;
-    left: 29%;
-    padding-top: 40%;
-    margin-top: -40%;
+    width: 70vw;
+    height: 500px;
+    max-width: 800px;
     position: relative;
-    transform: translateY(190px) translateX(120px);
+    padding-top: 0%;
+    margin-top: -0%;
+    margin-left: auto;
+    z-index: 0;
+    //transform: translateY(0px) translateX(-00px);
     background-image: url(../img/homepage1.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-position: contain;
+    // background-size: 100%;
 
-    @include wide-desktop {
-      padding-top: 0%;
-      margin-top: 0%;
-      height: 580px;
-      transform: translateY(-350px) translateX(0px);
-      left: 40%;
-    }
+    // @include wide-desktop {
+    //   padding-top: 0%;
+    //   margin-top: 5%;
+    //   //height: 580px;
+    //   transform: translateY(-350px) translateX(0px);
+    //   left: 40%;
+    // }
 
     @include tablet {
       padding-top: 47%;
@@ -186,24 +214,42 @@
   background-color: #f3efeb;
   color: $text-dark;
   width: 100%;
+  height:90vh;
+  background-image: url(../img/homepage2.png);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 160%;
+  background-size: 60vw 60vh;
+  @include tablet {
+    background-size: 80vw 60vh;
+  }
+
+  @include mobile {
+    background-size: 100vw 60vh;
+  }
+
+  @include small-mobile {
+    background-size: 100vw 35vh;
+    
+  }
 }
 
 .section-two {
-  height: 811px;
+ 
   margin: 0 0 0 $padding-right;
   padding: 40px 2 0 0;
   overflow: hidden;
 
   @include tablet {
-    height: 585px;
+ 
   }
 
   @include mobile {
-    height: 585px;
+  
   }
 
   @include small-mobile {
-    height: 585px;
+ 
   }
 
   &__heading {
@@ -331,39 +377,6 @@
       }
     }
   }
-
-  &__img-building {
-    z-index: 0;
-    width: 80%;
-    height: 0;
-    left: 25%;
-    padding-top: 39%;
-    margin-top: -39%;
-    position: relative;
-    transform: translateY(225px);
-    background-image: url(../img/homepage2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    @include wide-desktop {
-      padding-top: 0%;
-      margin-top: 0%;
-      height: 6000px;
-      transform: translateY(-300px) translateX(0px);
-    }
-    @include tablet {
-      padding-top: 44%;
-      margin-top: -44%;
-    }
-    @include mobile {
-      padding-top: 44%;
-      margin-top: -44%;
-    }
-    @include small-mobile {
-      padding-top: 53%;
-      margin-top: -53%;
-      width: 100%;
-    }
-  }
 }
 
 /////////////// SECTION 3 /////////////
@@ -372,22 +385,38 @@
   background-color: $home-bizarre;
   color: $mine-shaft;
   width: 100%;
-}
-
-.section-three {
-  height: 811px;
-  margin: 0;
-
+  height:90vh;
+  background-image: url(../img/homepage3.png);
+  background-repeat: no-repeat;
+  background-position: 100% 200%;
+  background-size: 100vw 50vh;
   @include tablet {
-    height: 585px;
+    background-size: 100vw 40vh;
   }
 
   @include mobile {
-    height: 585px;
+    background-size: 100vw 30vh;
   }
 
   @include small-mobile {
-    height: 585px;
+    background-size: 100vw 30vh;
+  }
+}
+
+.section-three {
+  
+  margin: 0;
+
+  @include tablet {
+   
+  }
+
+  @include mobile {
+    
+  }
+
+  @include small-mobile {
+   
   }
 
   &__heading {
@@ -513,37 +542,37 @@
     }
   }
 
-  &__img-building {
-    z-index: 0;
-    width: 100%;
-    height: 0;
-    padding-top: 30%;
-    margin-top: -30%;
-    position: relative;
-    background-image: url(../img/homepage3.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  // &__img-building {
+  //   z-index: 0;
+  //   width: 100%;
+  //   height: 0;
+  //   padding-top: 30%;
+  //   margin-top: -30%;
+  //   position: relative;
+  //   background-image: url(../img/homepage3.png);
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
 
-    @include wide-desktop {
-      padding-top: 33%;
-      margin-top: -33%;
+  //   @include wide-desktop {
+  //     padding-top: 33%;
+  //     margin-top: -33%;
 
-      transform: translateY(100px) translateX(0px);
-      background-size: cover;
-    }
+  //     transform: translateY(100px) translateX(0px);
+  //     background-size: cover;
+  //   }
 
-    @include tablet {
-      padding-top: 33%;
-      margin-top: -33%;
-    }
-    @include mobile {
-      padding-top: 34%;
-      margin-top: -34%;
-    }
-    @include small-mobile {
-      padding-top: 45%;
-      margin-top: -45%;
-      transform: translateY(50px);
-    }
-  }
+  //   @include tablet {
+  //     padding-top: 33%;
+  //     margin-top: -33%;
+  //   }
+  //   @include mobile {
+  //     padding-top: 34%;
+  //     margin-top: -34%;
+  //   }
+  //   @include small-mobile {
+  //     padding-top: 45%;
+  //     margin-top: -45%;
+  //     transform: translateY(50px);
+  //   }
+  // }
 }

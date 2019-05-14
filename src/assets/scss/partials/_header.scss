@@ -6,7 +6,8 @@
   color: $text-dark;
   width: 100%;
   overflow: hidden;
-  height: 811px;
+  // height: 811px;
+  height:100%;
 
   @include tablet {
     height: 600px;
