@@ -21,8 +21,7 @@ function initMap2() {
       return (options = {
         zoom: 16.0,
         center: viewAreaMobile,
-        gestureHandling: "none",
-        zoomControl: false,
+        zoomControl: true,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -32,8 +31,7 @@ function initMap2() {
       return (options = {
         zoom: 16.0,
         center: viewAreaTablet,
-        gestureHandling: "none",
-        zoomControl: false,
+        zoomControl: true,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -43,8 +41,7 @@ function initMap2() {
       return (optons = {
         zoom: 16.0,
         center: viewAreaDesktop,
-        gestureHandling: "none",
-        zoomControl: false,
+        zoomControl: true,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -93,7 +90,7 @@ function initMap2() {
           icon: pinSymbol(color),
           originalColor: color
         });
-        marker.addListener("click", changeColor);
+        //marker.addListener("click", changeColor);
         markers.push(marker);
         return marker;
       }

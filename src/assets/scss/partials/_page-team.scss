@@ -51,6 +51,7 @@
   }
 
   &__right {
+    font-family: Gordita-Light;
     width: 45%;
     font-size: 16px;
     line-height: 1.6;
@@ -73,7 +74,7 @@
     }
 
     @include small-mobile {
-      max-width: 90%;
+      width: 95%;
       padding: 0px 20px 0 30px;
       font-size: 15px;
     }
@@ -81,7 +82,7 @@
 
 
   &__text {
-    font-family: Gordita-Regular;
+    
     margin-bottom: 40px;
     max-width: 460px;
   }
@@ -145,11 +146,12 @@
   width: 50vw;
   left: 0vw;
 
-  font-family: Gordita-Regular;
+  font-family: Gordita-Light;
   z-index: 999;
 
   .copy {
     background-color: #f5f5f5;
+    line-height: 1.4;
     font-size: 13px;
     height: 432px;
     padding: 75px;
@@ -265,7 +267,7 @@
 
   &__person1-body {
     font-size: 12px;
-    font-family: Gordita-Regular;
+    font-family: Gordita-Light;
     line-height: 1.2em;
     padding: 30px;
     padding-top: 5px;

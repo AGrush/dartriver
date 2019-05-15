@@ -2,7 +2,7 @@
 .navigator {
   position: fixed;
   width: 12px;
-  height: 48px;
+  height: 120px;
   background: url(../img/scroll-inner.svg) no-repeat;
   top: 61%;
   left: 50px;
@@ -36,20 +36,38 @@
   }
 }
 
-.startx {
+.gal1 {
   transform: translateY(0px);
   opacity: 1;
   transition: 1s;
 }
 
-.middlex {
+.gal2 {
   transform: translateY(20px);
   opacity: 1;
   transition: 1s;
 }
 
-.endx {
+.gal3 {
   transform: translateY(40px);
+  opacity: 1;
+  transition: 1s;
+}
+
+.gal4 {
+  transform: translateY(60px);
+  opacity: 1;
+  transition: 1s;
+}
+
+.gal5 {
+  transform: translateY(80px);
+  opacity: 1;
+  transition: 1s;
+}
+
+.gal6 {
+  transform: translateY(100px);
   opacity: 1;
   transition: 1s;
 }
@@ -62,7 +80,6 @@
 /////////////////////////////
 
 .position-slides {
-  height: 675px;
   margin: 0 0 0 158px;
   padding: 20px 0 20px 100px;
   opacity: 0.4;
@@ -86,10 +103,12 @@
 }
 
 .show-slides {
+  height: 75vh!important;
   padding: 0;
   opacity: 1;
   transition: 1s;
 }
+
 
 .whitebg {
   background-color: #ffffff;
@@ -184,29 +203,24 @@
       display: none;
     }
     &:hover {
-      text-decoration: none;
-      color: $mine-shaft;
+      color:#0d5071;
+      transition: 0.2s;
     }
   }
 
   &__logo {
+    transform: translateY(-31px);
     background-color: $home-gallery;
     position: relative;
     margin: 0 auto;
     padding-bottom: 30px;
     display: block;
-    width: 185px;
+    width: 222px;
     height: 64px;
     background: url(../img/logo.svg) no-repeat;
     @include small-mobile {
       width: 165px;
     }
-  }
-
-  &__logo-higher {
-    transform: translateY(-31px);
-    width: 191px;
-    padding-bottom: 0px;
   }
 }
 
@@ -409,3 +423,4 @@
   animation-duration: 1s;
   animation-name: slidein;
 }
+

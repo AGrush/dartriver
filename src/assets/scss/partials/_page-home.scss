@@ -5,6 +5,23 @@
   color: $text-dark;
   width: 100%;
   height:85vh;
+  @include tablet {
+   
+  }
+
+  @include mobile {
+    
+  }
+
+  @include small-mobile {
+    background-size: 40vw 35vh;
+  }
+}
+.container-one-index {
+  background-color: $home-gallery;
+  color: $text-dark;
+  width: 100%;
+  height:85vh;
   background-image: url(../img/homepage1.png);
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -21,7 +38,6 @@
     background-size: 40vw 35vh;
   }
 }
-    
 
 .section-one-home {
   height:85vh;
@@ -80,7 +96,7 @@
       display: inline-block;
       transform: translateX(4px);
       height: 52px;
-      width: 42px;
+      width: 44px;
 
       @include tablet {
         height: 33px;
@@ -88,8 +104,8 @@
       }
 
       @include mobile {
-        height: 28px;
-        width: 25px;
+        height: 27px;
+        width: 22px;
       }
 
       @include small-mobile {
@@ -215,21 +231,40 @@
   color: $text-dark;
   width: 100%;
   height:90vh;
+  @include tablet {
+    background-size: 80vw 40vh;
+  }
+
+  @include mobile {
+    background-size: 100vw 50vh;
+  }
+
+  @include small-mobile {
+    background-size: 80vw 25vh;
+    
+  }
+}
+
+.container-two-index {
+  background-color: #f3efeb;
+  color: $text-dark;
+  width: 100%;
+  height:90vh;
   background-image: url(../img/homepage2.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 160%;
-  background-size: 60vw 60vh;
+  background-size: 80vw 60vh;
   @include tablet {
-    background-size: 80vw 60vh;
+    background-size: 80vw 40vh;
   }
 
   @include mobile {
-    background-size: 100vw 60vh;
+    background-size: 100vw 50vh;
   }
 
   @include small-mobile {
-    background-size: 100vw 35vh;
+    background-size: 80vw 25vh;
     
   }
 }
@@ -287,8 +322,8 @@
       display: inline-block;
       transform: translateX(4px);
       margin-right: -10px;
-      height: 51px;
-      width: 42px;
+      height: 52px;
+      width: 44px;
 
       @include tablet {
         height: 35px;
@@ -297,9 +332,9 @@
       }
 
       @include mobile {
-        height: 30px;
-        width: 25px;
-        margin-right: -4px;
+        height: 26px;
+    width: 21px;
+    margin-right: -3px;
       }
 
       @include small-mobile {
@@ -386,6 +421,24 @@
   color: $mine-shaft;
   width: 100%;
   height:90vh;
+  @include tablet {
+    background-size: 100vw 40vh;
+  }
+
+  @include mobile {
+    background-size: 100vw 30vh;
+  }
+
+  @include small-mobile {
+    background-size: 100vw 20vh;
+  }
+}
+
+.container-three-index {
+  background-color: $home-bizarre;
+  color: $mine-shaft;
+  width: 100%;
+  height:90vh;
   background-image: url(../img/homepage3.png);
   background-repeat: no-repeat;
   background-position: 100% 200%;
@@ -399,7 +452,7 @@
   }
 
   @include small-mobile {
-    background-size: 100vw 30vh;
+    background-size: 100vw 20vh;
   }
 }
 
@@ -451,25 +504,25 @@
       background: url(../img/A3.svg) no-repeat;
       display: inline-block;
       transform: translateX(4px);
-      height: 51px;
-      width: 42px;
+      height: 52px;
+      width: 44px;
 
       @include tablet {
         height: 35px;
         width: 28px;
-        margin-right: -4px;
+        margin-right: 0px;
       }
 
       @include mobile {
-        height: 30px;
-        width: 25px;
+        height: 27px;
+        width: 22px;
         margin-right: 0px;
       }
 
       @include small-mobile {
         height: 24px;
         width: 20px;
-        margin-right: 0px;
+        margin-right: -2px;
         transform: translateX(0px);
       }
     }

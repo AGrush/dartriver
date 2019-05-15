@@ -29,3 +29,18 @@ clickAway.addEventListener('click', () => {
   clickAway.style.visibility = "hidden"
   slider1.classList.remove("active");
 })
+
+const line = document.querySelectorAll(".line")
+const burgerbtn = document.querySelector(".header__menu")
+
+burgerbtn.addEventListener("mouseover", () => {
+  line.forEach(line => {
+    line.classList.add('changeBg')
+  })  
+})
+
+burgerbtn.addEventListener("mouseout", () => {
+  line.forEach(line => {
+    line.classList.remove('changeBg')
+  })  
+})

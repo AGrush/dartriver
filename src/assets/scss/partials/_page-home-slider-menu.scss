@@ -53,6 +53,10 @@
       font-size: 30px;
       text-decoration: none;
       color: $mine-shaft;
+      &:hover {
+        color:#0d5071;
+        transition: 0.2s;
+      }
     }
   }
 

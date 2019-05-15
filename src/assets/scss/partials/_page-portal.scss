@@ -1,18 +1,18 @@
 .header-portal {
   color: $text-dark;
   width: 100%;
-  height: 811px;
+  height: 100vh;
 
   @include tablet {
-    height: 700px;
+    
   }
 
   @include mobile {
-    height: 700px;
+    
   }
 
   @include small-mobile {
-    height: 700px;
+    
   }
 
   &__container {
@@ -78,6 +78,10 @@
     height: 20px;
     //line-height: 1.5;
     position: relative;
+    &:hover {
+      color:#0d5071;
+      transition: 0.2s;
+    }
   }
 
   &__login-text {
@@ -103,7 +107,8 @@
     }
   }
 
-  &__logo {
+  &__logo-higher {
+    transform: translateY(-31px);
     background-color: $home-gallery;
     position: relative;
     margin: 0 auto;
@@ -117,12 +122,6 @@
       padding-bottom: 50px;
     }
   }
-
-  &__logo-higher {
-    transform: translateY(-31px);
-    width: 191px;
-    padding-bottom: 0px;
-  }
 }
 
 .portal-form {
@@ -133,7 +132,7 @@
   max-width: 500px;
   padding: 40px;
   font-family: Gordita-Medium;
-  margin: 0 auto;
+  margin: 150px auto;
 
   @include small-mobile {
     margin: 0 13px;

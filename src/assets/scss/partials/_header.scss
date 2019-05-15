@@ -8,17 +8,17 @@
   overflow: hidden;
   // height: 811px;
   height:100%;
-
+  
   @include tablet {
-    height: 600px;
+    // height: 600px;
   }
 
   @include mobile {
-    height: 600px;
+    // height: 600px;
   }
 
   @include small-mobile {
-    height: 600px;
+    // height: 600px;
   }
 
   &__container {
@@ -47,6 +47,7 @@
   }
 
   &__burger {
+    
     position: relative;
     float: left;
     width: 25px;
@@ -60,6 +61,7 @@
       width: 80%;
       height: 1px;
       background-color: #d8d8d8;
+      
     }
 
     .line2 {
@@ -78,12 +80,19 @@
   &__burger-text {
     text-decoration: none;
     color: $mine-shaft;
+    transition: 0.2s;
     font-family: Gordita-Medium;
     font-size: 13px;
     margin-left: 10px;
     height: 20px;
     //line-height: 1.5;
     position: relative;
+    &:hover {
+      color:#0d5071;
+      transition: 0.2s;
+    }
+    
+    
   }
 
   &__login-text {
@@ -110,6 +119,7 @@
   }
 
   &__logo {
+    transform: translateY(-31px);
     background-color: $home-gallery;
     position: relative;
     margin: 0 auto;
