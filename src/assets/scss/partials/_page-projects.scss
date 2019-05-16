@@ -424,3 +424,23 @@
   animation-name: slidein;
 }
 
+
+
+
+.different-title{
+  opacity: 0;
+  transition: 0.5s;
+  font-size: 28px;
+  text-align: left;
+  color: #292929;
+  font-family: Gordita-Medium;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+
+.is-selected > .different-title {
+  opacity: 1;
+  transition: 0.5s;
+}

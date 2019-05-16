@@ -66,7 +66,7 @@ var controller = new ScrollMagic.Controller();
 
 
 var scene1 = new ScrollMagic.Scene({
-  triggerElement: "#sec1",
+  triggerElement: "#sec1" - 40,
   duration: $("#sec1").height() + 0
 })
   .on("enter leave", function() {

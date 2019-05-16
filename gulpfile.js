@@ -24,12 +24,21 @@ gulp.task("folders", function() {
   gulp
     .src([
       //'src/libs/**',
-      //'src/fonts/**',
+      // 'src/assets/img/**',
       "src/assets/webfonts/**"
     ])
     .pipe(gulp.dest("dist/assets/webfonts"));
 });
 
+gulp.task("moveimages", function() {
+  gulp
+    .src([
+      //'src/libs/**',
+      'src/assets/img/**',
+      // "src/assets/webfonts/**"
+    ])
+    .pipe(gulp.dest("dist/assets/img"));
+});
 //Move HTML files
 gulp.task("html", function() {
   gulp.src("src/*.html").pipe(gulp.dest("dist"));
@@ -160,4 +169,4 @@ gulp.task("watch", function() {
 });
 
 // All tasks together
-gulp.task("default", ["folders", "html", "sass", "uglify", "imagemin"]);
+gulp.task("default", ["folders", "html", "sass", "uglify", "moveimages"]);

@@ -1498,6 +1498,23 @@ a {
   -webkit-animation-name: slidein;
           animation-name: slidein; }
 
+.different-title {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 28px;
+  text-align: left;
+  color: #292929;
+  font-family: Gordita-Medium;
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  margin-bottom: 40px; }
+
+.is-selected > .different-title {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
 .hero-slider-projects {
   width: 100%;
   height: 801px; }
