@@ -140,14 +140,17 @@
 }
 
 .overlay {
+  opacity: 0;
   top: 0;
   visibility: hidden;
   position: absolute;
   width: 50vw;
-  left: 0vw;
+  top: 0vw;
 
   font-family: Gordita-Light;
   z-index: 999;
+  transition: opacity 1s;
+  
 
   .copy {
     background-color: #f5f5f5;
@@ -189,6 +192,9 @@
 }
 
 .visibleL {
+  top:0;
+  opacity: 1;
+  transition: opacity 1s;
   position: absolute;
   visibility: initial;
   left: -50vw;
@@ -196,6 +202,9 @@
 }
 
 .visibleR {
+  top:0;
+  opacity: 1;
+  transition: 1s;
   position: absolute;
   visibility: initial;
   left: 50vw;

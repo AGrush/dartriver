@@ -74,7 +74,7 @@ var scene1 = new ScrollMagic.Scene({
     lax0.classList.toggle("show-slides");
     $("#nav").toggleClass("gal1");
   })
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 
@@ -88,7 +88,7 @@ new ScrollMagic.Scene({
     lax2.classList.toggle("show-slides");
     $("#nav").toggleClass("gal2");
   })
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 
@@ -104,7 +104,7 @@ new ScrollMagic.Scene({
     lax3.classList.toggle("show-slides");
     $("#nav").toggleClass("gal3");
   })
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 
@@ -120,7 +120,7 @@ new ScrollMagic.Scene({
     $("#nav").toggleClass("gal4");
 
   })
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 
@@ -135,7 +135,7 @@ new ScrollMagic.Scene({
     lax5.classList.toggle("show-slides");
     $("#nav").toggleClass("gal5");
   })
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 
@@ -150,7 +150,7 @@ new ScrollMagic.Scene({
     lax6.classList.toggle("show-slides");
     $("#nav").toggleClass("gal6");
   })
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller);
 
 

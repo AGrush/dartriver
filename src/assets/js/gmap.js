@@ -64,7 +64,7 @@ function initMap() {
   function removeAnimateClass(){
     setTimeout(function(){ 
       infoWindow.classList.remove('animateInfo'); 
-    }, 1000);
+    }, 650);
   }
   const drawMap = () => {
     mapLabels.map(label => {
@@ -127,16 +127,7 @@ function initMap() {
 
   drawMap();
 }
-// var simulateClick = function (elem) {
-//   // Create our event (with options)
-//   var evt = new MouseEvent('click', {
-//     bubbles: true,
-//     cancelable: true,
-//     view: window
-//   });
-//   // If cancelled, don't dispatch our event
-//   var canceled = !elem.dispatchEvent(evt);
-// };
+
 
 // var someLink = document.querySelector('markerx');
 // simulateClick(someLink);

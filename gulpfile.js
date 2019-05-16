@@ -58,33 +58,33 @@ gulp.task("html", function() {
 gulp.task("imagemin", function() {
   return gulp
     .src("src/assets/img/*")
-    .pipe(
-      imagemin([
-        //png files lossy
-        imageminPngquant({
-          speed: 8, //1 bruteforce => 11 fastest
-          quality: [0.9, 1] //lossy settings 0-1 if too low wont save
-        })
+    // .pipe(
+    //   imagemin([
+    //     //png files lossy
+    //     imageminPngquant({
+    //       speed: 8, //1 bruteforce => 11 fastest
+    //       quality: [0.9, 1] //lossy settings 0-1 if too low wont save
+    //     })
 
-        // //jpg lossless
-        // imagemin.jpegtran({
-        //     progressive: true
-        // }),
+    //     // //jpg lossless
+    //     // imagemin.jpegtran({
+    //     //     progressive: true
+    //     // }),
 
-        // jpeg light lossy 1
-        // imageminJpegRecompress({
-        //     loops: 6,
-        //     min: 50,
-        //     max: 60,
-        //     quality: "low"
-        // })
+    //     // jpeg light lossy 1
+    //     // imageminJpegRecompress({
+    //     //     loops: 6,
+    //     //     min: 50,
+    //     //     max: 60,
+    //     //     quality: "low"
+    //     // })
 
-        //jpg light lossy 2
-        // imageminMozjpeg({
-        //   quality: 50
-        // })
-      ])
-    )
+    //     //jpg light lossy 2
+    //     // imageminMozjpeg({
+    //     //   quality: 50
+    //     // })
+    //   ])
+    // )
     .pipe(gulp.dest("dist/assets/img"));
 });
 
@@ -157,8 +157,7 @@ gulp.task("watch", function() {
   gulp.watch("src/assets/scss/**/*.scss", ["sass"]);
   gulp.watch("src/*.html", ["html"]);
   gulp.watch("src/assets/js/*.js", ["uglify"]);
-  // gulp.watch("src/assetsjs/*.js", ["uglify"]);
 });
 
 // All tasks together
-gulp.task("default", ["folders", "html", "sass", "uglify"]);//, "imagemin"
+gulp.task("default", ["folders", "html", "sass", "uglify", "imagemin"]);

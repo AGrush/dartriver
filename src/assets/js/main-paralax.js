@@ -12,11 +12,11 @@ var tween1 = TweenLite.to("#bldng1", 1, {
 var controller1 = new ScrollMagic.Controller();
 var scene1 = new ScrollMagic.Scene({
   triggerElement: "#prlx1",
-  offset: 400,
-  duration: 300
+  offset: 300,
+  duration: 400
 })
   .setTween(tween1)
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller1);
 
 //GSAP
@@ -25,7 +25,7 @@ var scene1 = new ScrollMagic.Scene({
 // });
 var tween2 = TweenLite.to("#bldng2", 1, {
   backgroundPositionY: "100%",
-  ease: Power3.EaseOut
+  ease: Power3.EaseIn
 });
 //Scrollmagic
 var controller2 = new ScrollMagic.Controller();
@@ -35,7 +35,7 @@ var scene2 = new ScrollMagic.Scene({
   duration: 500
 })
   .setTween(tween2)
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller2);
 
 //GSAP
@@ -43,7 +43,7 @@ var scene2 = new ScrollMagic.Scene({
 //   top: 150
 // });
 var tween3 = TweenLite.to("#bldng3", 1, {
-  backgroundPositionY: "100%",
+  backgroundPositionY: "105%",
   ease: Power2.EaseInOut
 });
 //Scrollmagic
@@ -51,8 +51,8 @@ var controller3 = new ScrollMagic.Controller();
 var scene3 = new ScrollMagic.Scene({
   triggerElement: "#prlx3",
   offset: 50,
-  duration: 500
+  duration: 400
 })
   .setTween(tween3)
-  .addIndicators()
+  // .addIndicators()
   .addTo(controller3);

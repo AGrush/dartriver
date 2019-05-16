@@ -25,10 +25,12 @@ const clickOff = document.querySelector(".clickOff");
 const button = document.querySelectorAll(".button");
 const logo = document.querySelector(".header__logo-higher");
 const prevNextBtn = document.querySelectorAll(".flickity-button");
+const burgerText = document.querySelector(".header-products__burger-text");
 
 button.forEach(btn => {
   btn.addEventListener("click", e => {
     var xPosition = e.clientX;
+    //if click on left side of screen
     if (xPosition < window.innerWidth / 2) {
       btn.nextElementSibling.classList.toggle("visibleR");
       btn.firstElementChild.classList.toggle("rotate45");
@@ -38,9 +40,11 @@ button.forEach(btn => {
       });
       logo.style.display = "none";
     } else {
+      //if click on right side of screen
       btn.nextElementSibling.classList.toggle("visibleL");
       btn.firstElementChild.classList.toggle("rotate45");
       clickOff.classList.toggle("visible");
+      burgerText.style.display = "none";
       prevNextBtn.forEach(x => {
         x.style.display = "none";
       });
@@ -49,7 +53,9 @@ button.forEach(btn => {
   });
 });
 
+//exit the popups
 clickOff.addEventListener("click", () => {
+  burgerText.style.display = "initial";
   clickOff.classList.toggle("visible");
   prevNextBtn.forEach(x => {
     x.style.display = "initial";

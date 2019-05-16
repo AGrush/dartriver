@@ -21,7 +21,6 @@ function initMap2() {
       return (options = {
         zoom: 16.0,
         center: viewAreaMobile,
-        zoomControl: true,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -31,7 +30,6 @@ function initMap2() {
       return (options = {
         zoom: 16.0,
         center: viewAreaTablet,
-        zoomControl: true,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,
@@ -41,7 +39,6 @@ function initMap2() {
       return (optons = {
         zoom: 16.0,
         center: viewAreaDesktop,
-        zoomControl: true,
         mapTypeControl: false,
         styles: mapStyles,
         streetViewControl: false,

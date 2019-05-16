@@ -54,3 +54,14 @@
   src: url("webfonts/39499C_2_0.woff") format("woff");
   src: url("webfonts/39499C_2_0.ttf") format("truetype");
 }
+
+
+@font-face {
+  font-family: 'Gordita-Light';
+  src: url('webfonts/39611E_0_0.eot');
+  src: url('webfonts/39611E_0_0.eot?#iefix') format('embedded-opentype');
+  src: url('webfonts/39611E_0_0.woff2') format('woff2');
+  src: url('webfonts/39611E_0_0.woff') format('woff');
+  src: url('webfonts/39611E_0_0.ttf') format('truetype');
+}
+ 
