@@ -144,30 +144,9 @@ function initMap() {
 // })
 
 const mapLabels = [
-  {
-    title: "A",
-    pos: {
-      lat: 51.5037,
-      lng: -0.0935
-    },
-    color: "#C88F4D",
-    imgUrl: "assets/img/nastuh.png",
-    heading: "Borough",
-    copy:
-      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
-  },
-  {
-    title: "G",
-    pos: {
-      lat: 51.516659,
-      lng: -0.1117
-    },
-    color: "#0D5071",
-    imgUrl: "assets/img/homepage1.png",
-    heading: "asfds te omnis patriotique.",
-    copy:
-      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
-  },
+
+  
+  //first building
   {
     title: "B",
     pos: {
@@ -175,11 +154,13 @@ const mapLabels = [
       lng: -0.139215
     },
     color: "#0D5071",
-    imgUrl: "assets/img/nastuh.png",
-    heading: "asdfsdf",
+    imgUrl: "assets/img/broadwick/6.png",
+    heading: "30 Broadwick Street, Soho",
     copy:
       "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
   },
+
+  //second building
   {
     title: "T",
     pos: {
@@ -187,20 +168,68 @@ const mapLabels = [
       lng: -0.14
     },
     color: "#0D5071",
-    imgUrl: "assets/img/nastuh.png",
-    heading: "Picadilly",
+    imgUrl: "assets/img/wigmore/wigmore.jpg",
+    heading: "95 Wigmore Street, Marylebone",
     copy:
       "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
   },
+
+  //third building
   {
     title: "P",
     pos: {
-      lat: 51.495,
+      lat: 51.494,
       lng: -0.1606
     },
     color: "#0D5071",
-    imgUrl: "assets/img/nastuh.png",
-    heading: "Sloane Square",
+    imgUrl: "assets/img/oxfordstreet/oxfordstreet.jpg",
+    heading: "73 / 89 Oxford Street, Soho",
+    copy:
+      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
+  },
+
+
+  //fourth building
+  {
+    title: "A",
+    pos: {
+      lat: 51.5037,
+      lng: -0.0935
+    },
+    color: "#C88F4D",
+    imgUrl: "assets/img/rathbone/rathbone.jpg",
+    heading: "Rathbone Place, Fitzrovia",
+    copy:
+      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
+  },
+
+
+
+  //fifth building
+  {
+    title: "G",
+    pos: {
+      lat: 51.515659,
+      lng: -0.1217
+    },
+    color: "#0D5071",
+    imgUrl: "assets/img/blackfriars/blackfriars.jpg",
+    heading: "240 Blackfriars Road, Southbank",
+    copy:
+      "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
+  },
+
+
+  //sixth building
+  {
+    title: "G",
+    pos: {
+      lat: 51.515659,
+      lng: -0.1117
+    },
+    color: "#0D5071",
+    imgUrl: "assets/img/citytower/citytower.jpg",
+    heading: "City Tower, City Of London",
     copy:
       "In Dicam luptatum vel. Vim te omnis patriotique. tota animal quarendum his no."
   }

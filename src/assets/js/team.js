@@ -26,6 +26,8 @@ const button = document.querySelectorAll(".button");
 const logo = document.querySelector(".header__logo-higher");
 const prevNextBtn = document.querySelectorAll(".flickity-button");
 const burgerText = document.querySelector(".header-products__burger-text");
+const burger = document.querySelector(".header-products__burger");
+
 
 button.forEach(btn => {
   btn.addEventListener("click", e => {
@@ -45,6 +47,7 @@ button.forEach(btn => {
       btn.firstElementChild.classList.toggle("rotate45");
       clickOff.classList.toggle("visible");
       burgerText.style.display = "none";
+      burger.style.opacity = "0";
       prevNextBtn.forEach(x => {
         x.style.display = "none";
       });
@@ -56,6 +59,7 @@ button.forEach(btn => {
 //exit the popups
 clickOff.addEventListener("click", () => {
   burgerText.style.display = "initial";
+  burger.style.opacity = "1";
   clickOff.classList.toggle("visible");
   prevNextBtn.forEach(x => {
     x.style.display = "initial";

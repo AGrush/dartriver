@@ -66,12 +66,15 @@ var controller = new ScrollMagic.Controller();
 
 
 var scene1 = new ScrollMagic.Scene({
+  //trigger of first gallery activation
   triggerElement: "#sec1" - 40,
+  //duration of first gallerys active period
   duration: $("#sec1").height() + 0
 })
   .on("enter leave", function() {
     $("#sec1").toggleClass("show-slides");
     lax0.classList.toggle("show-slides");
+    //move svg circle onto first dot
     $("#nav").toggleClass("gal1");
   })
   // .addIndicators()
@@ -79,6 +82,7 @@ var scene1 = new ScrollMagic.Scene({
 
 
 
+  
 new ScrollMagic.Scene({
   triggerElement: "#sec2",
   duration: $("#sec2").height() + 0

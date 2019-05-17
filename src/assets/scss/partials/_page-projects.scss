@@ -282,9 +282,9 @@
     width: 100%;
     height: 170px;
     float: left;
-    background-position: 50% 50%;
-    background-repeat: none;
-    background-size: cover;
+    background-position: 20px 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-bottom: 20px;
 
     @include mobile {
@@ -438,13 +438,25 @@
   text-align: left;
   color: #292929;
   font-family: Gordita-Medium;
-  line-height: 1.2em;
+  line-height: 0em;
   letter-spacing: 1px;
   margin-bottom: 40px;
+  @include tablet {
+    font-size: 25px;
+  }
+
+  @include mobile {
+    font-size: 22px;
+  }
+
+  @include small-mobile {
+    font-size: 16px;
+  }
 }
 
 
 .is-selected > .different-title {
   opacity: 1;
   transition: 0.5s;
+  
 }
