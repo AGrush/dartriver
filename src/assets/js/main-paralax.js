@@ -24,7 +24,7 @@ var scene1 = new ScrollMagic.Scene({
 //   top: 120
 // });
 var tween2 = TweenLite.to("#bldng2", 1, {
-  backgroundPositionY: "100%",
+  backgroundPosition: "160% 100%",
   ease: Power3.EaseIn
 });
 //Scrollmagic

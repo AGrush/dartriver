@@ -91,7 +91,10 @@
       color:#0d5071;
       transition: 0.2s;
     }
-    
+    @include small-mobile {
+      
+      display:none;
+    }
     
   }
 

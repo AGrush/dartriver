@@ -16,7 +16,7 @@
     height: auto;
   }
   &__left {
-    width: 50%;
+    max-width: 50%;
     min-width: 202px;
     @include mobile {
       max-width: 45%;

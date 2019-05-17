@@ -82,6 +82,10 @@
       color:#0d5071;
       transition: 0.2s;
     }
+    @include small-mobile {
+      
+      display:none;
+    }
   }
 
   &__login-text {
@@ -132,10 +136,10 @@
   max-width: 500px;
   padding: 40px;
   font-family: Gordita-Medium;
-  margin: 150px auto;
+  margin: 100px auto;
 
   @include small-mobile {
-    margin: 0 13px;
+    margin: -50px 13px;
   }
 
   &__heading {
@@ -207,6 +211,11 @@
     @include mobile {
       width: 100%;
     }
+    @include small-mobile {
+      font-size: 10px;
+      padding-top: 5px;
+    }
+  
   }
 }
 
